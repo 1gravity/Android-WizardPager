@@ -35,6 +35,7 @@ public class MainActivity extends WizardActivity {
 
 	private Button mNextButton;
 	private Button mPrevButton;
+	private Button mSubmitButton;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -45,7 +46,8 @@ public class MainActivity extends WizardActivity {
 		mStepPagerStrip = (StepPagerStrip) findViewById(R.id.strip);
 		mNextButton = (Button) findViewById(R.id.next_button);
 		mPrevButton = (Button) findViewById(R.id.prev_button);
-		setControls(mPager, mStepPagerStrip, mNextButton, mPrevButton);
+		mSubmitButton = (Button) findViewById(R.id.submit_button);
+		setControls(mPager, mStepPagerStrip, mNextButton, mPrevButton, mSubmitButton);
 	}
 
 	@Override

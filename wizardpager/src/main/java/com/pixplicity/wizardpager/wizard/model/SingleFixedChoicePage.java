@@ -16,13 +16,13 @@
 
 package com.pixplicity.wizardpager.wizard.model;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-
 import android.text.TextUtils;
 
 import com.pixplicity.wizardpager.wizard.ui.SingleChoiceFragment;
 import com.pixplicity.wizardpager.wizard.ui.WizardFragment;
+
+import java.util.ArrayList;
+import java.util.Arrays;
 /**
  * A page offering the user a number of mutually exclusive choices.
  */
@@ -62,8 +62,9 @@ public class SingleFixedChoicePage extends Page {
         return mData.getString(Page.SIMPLE_DATA_KEY);
     }
 
-    public void setValue(String value) {
+    public SingleFixedChoicePage setValue(String value) {
         mData.putString(SIMPLE_DATA_KEY, value);
+        return this;
     }
 
     public String toString() {

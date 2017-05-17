@@ -39,7 +39,7 @@ build.xml
 proguard-project.txt
 
 .gradle
+.gradle/
 **/capture/**/*
 **/captures/**/*
 **/build/**/*
-
