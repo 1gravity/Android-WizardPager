@@ -38,3 +38,8 @@ ant.properties
 build.xml
 proguard-project.txt
 
+.gradle
+**/capture/**/*
+**/captures/**/*
+**/build/**/*
+
